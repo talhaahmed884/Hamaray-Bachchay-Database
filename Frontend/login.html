@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamaray Bachay Login</title>
+
+    <!-- OWL CARROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- #region Custom Style-->
+    <link rel="stylesheet" href="./login_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="row">
+                <div class="col liquid">
+                    <h2 style="color: black;margin-left: 1rem;">Hamaray Bachay</h2>
+                    <!-- Owl-Carousel -->
+                    <div class="owl-carousel owl-theme">
+                        <img src="./assets/undraw_authentication_fsn5.svg" alt="" class="login_img">
+                        <img src="./assets/undraw_personal_data_29co.svg" alt="" class="login_img">
+                        <img src="./assets/student.png" alt="" class="login_img">
+                    </div>
+                    <div class="findUs">
+                        <a href="http://hamaraybachchay.com/">Find Us</a>
+                    </div>
+                </div>
+
+                <div class="col login">
+                    <form action="home_page.html" method="post">
+                        <div class="titles">
+                            <h3>Ready to Login</h3>
+                            <h4>
+                                <table style="margin-left: 2rem;">
+                                    <tr>
+                                        <td><input type="radio" name="user" value="student" required>Student</td>
+                                        <td><input type="radio" name="user" value="employee" required>Employee</td>
+                                    </tr>
+                                </table>
+                            </h4>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="ID" required class="form-input" name="login">
+                            <!-- <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                            </div> -->
+                        </div>
+                        <button type="submit" class="btn btn-login">Login</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autopayHoverPause: true,
+                items: 1
+            })
+        })
+    </script>
+
+</body>
+
+</html>
